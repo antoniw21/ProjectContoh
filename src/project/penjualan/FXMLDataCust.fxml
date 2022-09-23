@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.penjualan.FXMLDataCustController">
+   <children>
+      <Label layoutX="26.0" layoutY="21.0" text="Data Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvcust" layoutX="26.0" layoutY="67.0" prefHeight="197.0" prefWidth="366.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnawal" layoutX="61.0" layoutY="279.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="25.0" prefWidth="68.0" text="awal" />
+      <Button fx:id="btnsesudah" layoutX="223.0" layoutY="279.0" mnemonicParsing="false" onAction="#sesudahklik" text="sesudah" />
+      <Button fx:id="btnsebelum" layoutX="137.0" layoutY="279.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="25.0" prefWidth="75.0" text="sebelum" />
+      <Button fx:id="btnakhir" layoutX="294.0" layoutY="279.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="25.0" prefWidth="68.0" text="akhir" />
+      <Button fx:id="btntambah" layoutX="59.0" layoutY="317.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="25.0" prefWidth="68.0" text="tambah" />
+      <Button fx:id="btnupdate" layoutX="137.0" layoutY="317.0" mnemonicParsing="false" onAction="#updateklik" prefHeight="25.0" prefWidth="75.0" text="update" />
+      <Button fx:id="btnhapus" layoutX="223.0" layoutY="317.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="25.0" prefWidth="60.0" text="hapus" />
+      <Button fx:id="btnquit" layoutX="294.0" layoutY="317.0" mnemonicParsing="false" onAction="#quitklik" prefHeight="25.0" prefWidth="68.0" text="quit" />
+      <Label layoutX="294.0" layoutY="14.0" prefHeight="25.0" prefWidth="68.0" text="Cari Data:">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchcust" layoutX="294.0" layoutY="36.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="98.0" />
+   </children>
+</AnchorPane>
